@@ -7,17 +7,55 @@ body {
 }
 
 .left-column, .right-column {
-    flex: 1;
     padding: 20px;
     border: 1px solid #ddd;
-    margin: 10px;
+    overflow: auto;
+}
+
+.left-column {
+    flex: 2; 
+    margin-right: 0; 
 }
 
 .right-column {
-    background-color: #f9f9f9;
+    flex: 1;
+    background-color: greenyellow;
+    margin-left: 0; 
+    border-color: black;
+    border-width: .7mm;
 }
 
 .highlight {
     font-weight: bold;
-    background-color: yellow;
+    background-color: greenyellow;
+}
+
+p{
+    font-size: 20pt;
+}
+
+button {
+    background-color: greenyellow;
+    border-color: black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.detail-text{
+    font-size: 20pt;
+}
+
+.exp-header{
+    font-size: 20pt;
+    font-weight: bold;
+    text-decoration: underline;
 }
