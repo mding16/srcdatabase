@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRC Database Primer Early Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>
+      Automated Decision-Making: Fairness & Justice, Transparency, Reliability
+    </h1>
+    <div class="container">
+      <div class="left-column" id="left-column">
+        <!-- Primer text auto generated -->
+      </div>
+      <div class="right-column" id="details">
+        <!-- Curated lists auto generated here -->
+      </div>
+    </div>
+    <script>
+      // + expand button functionality
+      function showDetails(detailText) {
+        document.getElementById("details").innerHTML = detailText;
+      }
+
+      // Generate left/right content
+      function generateContent(data) {
+        const leftColumn = document.getElementById("left-column");
+        leftColumn.innerHTML = ""; // clear old content
+
+        data.textPairs.forEach((pair) => {
+          const regex = new RegExp(`(${pair.boldedword})`, "g");
+          const highlightedText = pair.text.replace(
+            regex,
+            `<span class="highlight">$1</span> <button onclick="showDetails('${pair.detail}')">+</button>`
+          );
+
+          const p = document.createElement("p");
+          p.innerHTML = highlightedText;
+          leftColumn.appendChild(p);
+        });
+      }
+
+      // JSON of primer language
+      const data = {
+        textPairs: [
+          {
+            text: "Today, humans are developing and deploying automated decision-making systems for high-impact applications.",
+            boldedword: "high-impact applications",
+            detail: "Here is the expanded information for the first text.",
+          },
+          {
+            text: "While the choice of automation has resulted in many benefits, it has also resulted in harms.",
+            boldedword: "harms",
+            detail: "Here is the expanded information for the second text.",
+          },
+          {
+            text: "This wide and rapid integration of technology into all sectors of society also sparked an explosion of information by stakeholder groups on topics of fairness, justice, transparency, and reliability.",
+            boldedword: "stakeholder groups",
+            detail: "Here is the expanded information for another text item.",
+          },
+          {
+            text: "The emerging space of research and discussion around AI has many names, most commonly “Responsible AI”, “AI Governance”, “Trustworthy AI”, and “AI Safety.",
+            boldedword: "names",
+            detail: "Here is the expanded information for another text item.",
+          },
+        ],
+      };
+      generateContent(data);
+    </script>
+  </body>
+</html>

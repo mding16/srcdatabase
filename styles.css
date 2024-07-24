@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+.right-column {
+    background-color: #f9f9f9;
+}
+
+.highlight {
+    font-weight: bold;
+    background-color: yellow;
+}
