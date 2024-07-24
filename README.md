@@ -1,6 +1,11 @@
 # Socially Responsible Computing Database Project [PRIMER DEMO]
-## Deployed Link
-View the deployed primer here: https://mding16.github.io/srcdatabase/
+## TLDR
+This is a simple HTML mock up of primers for the SRC area: **Automated Decision-Making: Fairness & Justice, Transparency, Reliability**<br>
+Deployed link: https://mding16.github.io/srcdatabase/
+
+_Note:_ 
+- _This site only contains primers for: Introduction, Fairness & Justice. Other primers are still being developed!_
+- _The actual database will be on a robust, sustainable platform developed in collaboration with Brown's Center for Digital Scholarship. This site just serves as a first look at the primer format for early feedback_
 
 ## About the SRC Database
 The Socially Responsible Computing (SRC) program reimagines computer science education at Brown and beyond by exposing future engineers to the social impact of modern digital technology, ethical and political challenges surrounding such technologies, as well as technical and theoretical tools to address those challenges. The program develops curricula, pedagogical approaches and instructional materials to support the inclusion of SRC in a wide variety of CS courses. The SRC curriculum currently covers 7 overarching areas: 
@@ -34,7 +39,7 @@ The SRC Database Project aims to address the above challenges. It has the follow
 The database is an educational tool that aims to improve the experiences of STAs, CS faculty, and CS students in a sustainable manner. Additionally, it represents a broader effort to provide resources to the growing community of faculty and students at Brown with a shared interest in advancing responsible technologies. 
 
 ## How to use this repo 
-This repo contains a simple demo of what a PRIMER for the SRC Database Project looks like. Note: the actual database will be on a robust, sustainable platform developed in collaboration with Brown's Center for Digital Scholarship. This site just serves as a first look at the primer format. 
+This repo contains a simple demo of what a PRIMER for the SRC Database Project looks like. 
 
 STEPS:
 1. Clone the repo: https://github.com/mding16/srcdatabase.git
