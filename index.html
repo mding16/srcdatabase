@@ -21,14 +21,12 @@
     </div>
     <script>
       // + expand button functionality
-      function showDetails(detailText, header) {
-    document.getElementById("details").innerHTML = 
-        `<div>
-            <div class="exp-header">${header} </div>
-        <div class="detail-text">${detailText}</div>
+      function showDetails(detailHtml, header) {
+        document.getElementById("details").innerHTML = `<div>
+            <div class="exp-header">${header}</div>
+            <div class="detail-text">${detailHtml}</div>
         </div>`;
-    }
-
+      }
 
       // Generate left/right content
       function generateContent(data) {
@@ -39,37 +37,59 @@
           const regex = new RegExp(`(${pair.boldedword})`, "g");
           const highlightedText = pair.text.replace(
             regex,
-            `<span class="highlight">$1</span> <button onclick="showDetails('${pair.detail}', '${pair.boldedword}')">+</button>`
+            `<span class="highlight">$1</span> <button onclick="showDetails(\`${pair.detail}\`, '${pair.boldedword}')">+</button>`
           );
 
           const p = document.createElement("p");
           p.innerHTML = highlightedText;
           leftColumn.appendChild(p);
         });
+
+        // Additional content
+        const additionalContent = `
+        <p>This database offers a map to cities of resources for three topics:</p>
+        <div class="list">
+            <ul>
+                <li>Fairness & Justice</li>
+                <li>Transparency</li>
+                <li>Reliability</li>
+            </ul>
+        </div>
+        <p>Each section contains a short primer and curated (growing) lists of resources.</p>`;
+        leftColumn.innerHTML += additionalContent; // Append additional content
       }
 
-      // JSON of primer language
+      // JSON of primer language with HTML elements in detail
       const data = {
         textPairs: [
           {
             text: "Today, humans are developing and deploying automated decision-making systems for high-impact applications.",
             boldedword: "high-impact applications",
-            detail: "resume screening, performance assessment, tenant screening, property appraisal, credit scoring, clinical care, child welfare, pretrial risk assessment, educational performance",
+            detail: `<p>Resume screening: 
+                https://ai.gov/ai-use-cases/</p>
+               <p>Performance assessment</p>
+               <p>Tenant screening</p>
+               <p>Property appraisal</p>
+               <p>Credit scoring</p>
+               <p>Clinical care</p>
+               <p>Child welfare</p>
+               <p>Pretrial risk assessment</p>
+               <p>Educational performance</p>`,
           },
           {
             text: "While the choice of automation has resulted in many benefits, it has also resulted in many harms.",
             boldedword: "harms",
-            detail: "Here is the expanded information for the second text.",
+            detail: `<p>Here is the expanded information for the second text.</p>`,
           },
           {
             text: "This wide and rapid integration of technology into all sectors of society also sparked an explosion of information by stakeholder groups on topics of fairness, justice, transparency, and reliability.",
             boldedword: "stakeholder groups",
-            detail: "Here is the expanded information for another text item.",
+            detail: `<p>Here is the expanded information for another text item.</p>`,
           },
           {
             text: "The emerging space of research and discussion around AI has many names, most commonly “Responsible AI”, “AI Governance”, “Trustworthy AI”, and “AI Safety.",
             boldedword: "names",
-            detail: "Here is the expanded information for another text item.",
+            detail: `<p>Here is the expanded information for another text item.</p>`,
           },
         ],
       };

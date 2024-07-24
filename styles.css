@@ -1,26 +1,32 @@
 body {
     font-family: Arial, sans-serif;
 }
-
+h1{
+    font-size: 40pt;
+}
 .container {
     display: flex;
 }
 
 .left-column, .right-column {
     padding: 20px;
-    border: 1px solid #ddd;
     overflow: auto;
 }
 
 .left-column {
     flex: 2; 
     margin-right: 0; 
+    border:solid;
+    border-right: none;
+    border-color: black;
+    border-width: .7mm;
 }
 
 .right-column {
     flex: 1;
     background-color: greenyellow;
     margin-left: 0; 
+    border: solid;
     border-color: black;
     border-width: .7mm;
 }
@@ -50,12 +56,16 @@ button {
     padding: 0;
 }
 
-.detail-text{
+/* .detail-text{
     font-size: 20pt;
-}
+} */
 
 .exp-header{
     font-size: 20pt;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.list{
+    font-size: 20pt;
 }
