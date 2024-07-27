@@ -1,7 +1,7 @@
 # Socially Responsible Computing Database Project [PRIMER DEMO]
 ## TLDR
 This is a simple HTML mock up of primers for the SRC area: **Automated Decision-Making: Fairness & Justice, Transparency, Reliability**<br>
-Deployed link: https://mding16.github.io/srcdatabase/
+**<mark style="background-color: #FFFF00">CLICK ME: (Deployed link) https://mding16.github.io/srcdatabase/ </mark>**
 
 _Note:_ 
 - _This site only contains primers for: Introduction, Fairness & Justice. Other primers are still being developed!_
