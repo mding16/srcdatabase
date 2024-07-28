@@ -47,7 +47,6 @@
 
         // Additional content
         const additionalContent = `
-        <p>This database offers a map to cities of resources for three topics:</p>
         <div class="list">
             <ul>
                 <li>Fairness & Justice</li>
@@ -55,7 +54,8 @@
                 <li>Reliability</li>
             </ul>
         </div>
-        <p>Each section contains a short primer and curated (growing) lists of resources.</p>`;
+        
+        `;
         leftColumn.innerHTML += additionalContent; // Append additional content
       }
 
@@ -64,33 +64,83 @@
         textPairs: [
           {
             text: "Today, humans are developing and deploying automated decision-making systems for high-impact applications.",
-            boldedword: "automated decision-making systems for high-impact applications",
-            detail: `<p>Resume screening: 
-              <a href=https://ai.gov/ai-use-cases/ target=blank>gov</a>
+            boldedword:
+              "automated decision-making systems for high-impact applications",
+            detail: `
+            <p class=header>Note on automated decision-making systems</p>
+            <p>
+              This SRC area will focus on automated decision-making systems, 
+              but there are many other applications of artificial intelligence 
+              currently beyond the scope of this primer. 
+              Some database links might also contain non-decision-making applications. 
+              For further exploration:
+              </p>
+              <a target=blank href=https://ai.gov/ai-use-cases/>
+                      - United States Federal AI Use Case Inventory</a>
+              <p class=header>Examples of high-impact applications:</p>
+            <p>- Resume screening:
                 </p>
-               <p>Performance assessment</p>
-               <p>Tenant screening</p>
-               <p>Property appraisal</p>
-               <p>Credit scoring</p>
-               <p>Clinical care</p>
-               <p>Child welfare</p>
-               <p>Pretrial risk assessment</p>
-               <p>Educational performance</p>`,
+               <p>- Performance assessment</p>
+               <p>- Tenant screening</p>
+               <p>- Property appraisal</p>
+               <p>- Credit scoring</p>
+               <p>- Clinical care</p>
+               <p>- Child welfare</p>
+               <p>- Pretrial risk assessment</p>
+               <p>- Educational performance</p>`,
           },
           {
             text: "While the choice of automation has resulted in many benefits, it has also resulted in many harms.",
             boldedword: "harms",
-            detail: `<p>Here is the expanded information for the second text.</p>`,
+            detail: `<p>
+              AI-related harms are documented in databases such as:
+              </p>
+              <a target=blank href=https://oecd.ai/en/incidents?search_terms=%5B%5D&and_condition=false&from_date=2014-01-01&to_date=2024-07-05&properties_config=%7B%22principles%22:%5B%5D,%22industries%22:%5B%5D,%22harm_types%22:%5B%5D,%22harm_levels%22:%5B%5D,%22harmed_entities%22:%5B%5D%7D&only_threats=false&order_by=date&num_results=20>- OECD AI Incidents Monitor (AIM)</a><br></br>
+              <a target=blank href=https://incidentdatabase.ai/>- AI Incident Database</a><br></br>
+              <a target=blank href=https://arxiv.org/pdf/2406.13843>- Generative AI Misuse: A Taxonomy of Tactics and Insights from Real-World Data</a><br></br>
+              `,
           },
           {
             text: "This wide and rapid integration of technology into all sectors of society also sparked an explosion of information by stakeholder groups on topics of fairness, justice, transparency, and reliability.",
             boldedword: "stakeholder groups",
-            detail: `<p>Here is the expanded information for another text item.</p>`,
+            detail: `
+            <p>- Researchers and academic communities</p>
+               <p>- Policymakers (local/state/federal/international)</p>
+               <p>- Businesses and industry groups</p>
+               <p>- Civil society (individuals, community advocates, trade groups, tech policy)</p>
+               <p>- Media</p>
+               <p>- Foundations</p>
+            `,
           },
           {
             text: "The emerging space of research and discussion around AI has many names, most commonly “Responsible AI”, “AI Governance”, “Trustworthy AI”, and “AI Safety.",
             boldedword: "names",
-            detail: `<p>Here is the expanded information for another text item.</p>`,
+            detail: `
+            <p class=header>List of common names:</p>
+            <p>- Responsible AI</p>
+               <p>- Trustworthy AI</p>
+               <p>- AI Governance</p>
+               <p>- Human Centered AI</p>
+               <p>- AI Safety</p>
+               <p>- AI Ethics</p>
+           <p class=header>A note on these names:</p>
+            <p>These terms do not have universally agreed upon definitions. Stakeholder groups use them in different contexts (naming organizations, centers, initiatives, projects, etc.) depending on their own values and priorities. Thus, the SRC database does not subscribe to one name on the list. Instead, it dives directly into 3 subtopics often discussed within spaces with these names: fairness & justice, transparency, and reliability.
+          </p>
+          <p>For further exploration of definitions:</p>
+          <a target=blank href=https://airc.nist.gov/AI_RMF_Knowledge_Base/Glossary>- NIST “The Language of Trustworthy AI: An In-Depth Glossary of Terms”</a><br></br>
+<a target=blank href=https://www.aaas.org/sites/default/files/2022-09/Paper%201_AI%20Foundational%20Issues_NIST_FINAL.pdf?adobe_mc=MCMID%3D28184402771370035972070700203311801975%7CMCORGID%3D242B6472541199F70A4C98A6%2540AdobeOrg%7CTS%3D1665504690>- AAAS Artificial Intelligence and the Courts: MATERIALS FOR JUDGES, Artificial Intelligence</a><br></br>
+<a target=blank href=https://windowsontheory.org/2023/04/12/thoughts-on-ai-safety/>- Windows on Theory “Thoughts on AI safety”</a><br></br>
+`,
+          },
+          {
+            text: "This database offers a map to curated lists of resources on three subtopics:",
+            boldedword: "subtopics:",
+            detail: `
+            <p class=header>Some disclaimers:</p>
+            <p>1. This database organizes information into these 3 topics, but many resources are associated with more than one (eg. issues of reliability can also be issues of fairness).
+</p>
+<p> 2. Understandings of fairness, justice, transparency, and reliability differ across cultures. This database is currently curated using a Western ideological perspective and United States socio-cultural-political-economic context. A future goal is to expand into perspectives beyond the West.</p>
+            `,
           },
         ],
       };

@@ -23,7 +23,7 @@ h1{
 }
 
 .right-column {
-    flex: 1;
+    flex: 1.5;
     background-color: greenyellow;
     margin-left: 0; 
     border: solid;
@@ -68,4 +68,17 @@ button {
 
 .list{
     font-size: 20pt;
+}
+
+a{
+    font-size: 20pt;
+}
+
+.header{
+    color: blue;
+}
+
+
+.disclaimer{
+    color: blue;
 }
