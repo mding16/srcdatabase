@@ -4,6 +4,12 @@ body {
 h1{
     font-size: 40pt;
 }
+
+h2{
+    color: blue;
+    font-size: 30pt;
+}
+
 .container {
     display: flex;
 }
@@ -82,3 +88,4 @@ a{
 .disclaimer{
     color: blue;
 }
+
