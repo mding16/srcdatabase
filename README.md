@@ -11,7 +11,7 @@ _Note:_
 The Socially Responsible Computing (SRC) program reimagines computer science education at Brown and beyond by exposing future engineers to the social impact of modern digital technology, ethical and political challenges surrounding such technologies, as well as technical and theoretical tools to address those challenges. The program develops curricula, pedagogical approaches and instructional materials to support the inclusion of SRC in a wide variety of CS courses. The SRC curriculum currently covers 7 overarching areas: 
 
 1) Data protection and privacy,
-2) Data and AI: accuracy, fairness, justice,
+2) Automated Decision-Making: Fairness & Justice, Transparency, Reliability,
 3) Communication and public discourse,
 4) Accessibility and universal design,
 5) Digital well-being,
