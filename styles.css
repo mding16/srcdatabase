@@ -3,15 +3,21 @@ body {
 }
 h1{
     font-size: 40pt;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 h2{
-    color: blue;
+    color: #911826;
     font-size: 30pt;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .container {
     display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .left-column, .right-column {
@@ -30,7 +36,7 @@ h2{
 
 .right-column {
     flex: 1.5;
-    background-color: greenyellow;
+    background-color: #91182659;
     margin-left: 0; 
     border: solid;
     border-color: black;
@@ -39,7 +45,7 @@ h2{
 
 .highlight {
     font-weight: bold;
-    background-color: greenyellow;
+    background-color: #91182659;
 }
 
 p{
@@ -47,7 +53,7 @@ p{
 }
 
 button {
-    background-color: greenyellow;
+    background-color: #91182659;
     border-color: black;
     color: black;
     text-align: center;
@@ -81,11 +87,33 @@ a{
 }
 
 .header{
-    color: blue;
+    color: #911826;
 }
 
 
 .disclaimer{
-    color: blue;
+    color: #911826;
 }
 
+
+/* styles.css */
+.imgdiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgdiv img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures image fits within the container without distortion */
+    max-width: 100%; /* Ensures the image doesn't overflow the container */
+  }
+  
+  /* .imgdiv img {
+    max-width: 20%;
+    height: auto;
+    object-fit: contain;
+  } */
+  
