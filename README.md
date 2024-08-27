@@ -4,6 +4,7 @@
 
 This is a simple HTML mock up of primers for the SRC area: **Automated Decision-Making: Fairness & Justice, Transparency, Reliability**<br>
 **<mark style="background-color: #FFFF00">CLICK ME: (Deployed link) https://mding16.github.io/srcdatabase/ </mark>**
+<br></br>
 **<mark style="background-color: #FFFF00">Primer text: https://docs.google.com/document/d/1JoqKMSUIE4f4r308Fp8hJRiGimYnr4sKq5po1XxYC5Y/edit?usp=sharing</mark>**
 
 _Note:_
