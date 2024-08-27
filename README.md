@@ -9,7 +9,7 @@ This is a simple HTML mock up of primers for the SRC area: **Automated Decision-
 
 _Note:_
 
-- _This site only contains primers for: Introduction, Fairness & Justice. Other primers are still being developed!_
+- _This site only contains primers for the Introduction. Other primers are still being developed!_
 - _The actual database will be on a robust, sustainable platform developed in collaboration with Brown's Center for Digital Scholarship. This site just serves as a first look at the primer format for early feedback_
 
 ## About the SRC Database
